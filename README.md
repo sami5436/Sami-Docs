@@ -27,7 +27,7 @@ Hi! I'm Sami Hamdalla, a computer science student at the University of Houston. 
 ---
 
 ## Cloud
-
+*Last updated: 04/13/2025*
 ### AWS
 - EC2, S3, IAM basics
 - Notes on AWS CLI
@@ -45,58 +45,45 @@ Hi! I'm Sami Hamdalla, a computer science student at the University of Houston. 
 ---
 
 ## Object-Oriented Programming
-
+*Last updated: 04/13/2025*
 ### Encapsulation
-- Why it matters
-- Getters and setters in Python / C++
+
 
 ### Inheritance
-- Single vs. Multiple
-- Abstract classes
+
 
 ### Polymorphism
-- Method overloading vs. overriding
-- Real-world examples
+
 
 ---
 
 ## Data Structures & Algorithms
-
+*Last updated: 04/13/2025*
 ### Linked Lists
-- Singly vs Doubly
-- Recursive reversal
+
 
 ### Trees
-- Binary trees vs BSTs
-- DFS, BFS, and traversals
+
 
 ### Sorting Algorithms
-- Bubble, Merge, Quick
-- Time complexity comparisons
+
 
 ---
 
 ## LeetCode Practice
+*Last updated: 04/13/2025*
 
 ### Arrays
-- Two pointers pattern
-- Sliding window examples
 
 ### Recursion
-- Base cases and backtracking
-- When to use recursion
 
 ### Binary Search
-- Left/right boundary handling
-- Real coding examples
+
 
 ---
 
 ## Miscellaneous
-
-- Notes from workshops or meetups
-- Cool tech reads or YouTube summaries
-- Resume/project tips
+*Last updated: 04/13/2025*
 
 ---
 
