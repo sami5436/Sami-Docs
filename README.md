@@ -88,6 +88,7 @@ Diving into it, I was confused on how to even begin. I decided to search up the 
 <img src="images/aws/redshift.png" width="75"/> **Redshift** – Fast, petabyte-scale data warehouse for analytics.
 
 **Monitoring & Logging**:
+
 <img src="images/aws/cloudwatch.png" width="75"/> **CloudWatch** – Monitor logs, metrics, and set alarms for all your AWS resources.
 
 <img src="images/aws/cloudtrail.png" width="75"/> **CloudTrail** – Logs all actions made through the AWS console or CLI. Great for auditing. **CloudWatch Alarms** – Set alerts when metrics (like CPU or errors) pass a threshold.
