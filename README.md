@@ -61,7 +61,7 @@ Diving into it, I was confused on how to even begin. I decided to search up the 
 
 **Storage**:
 
-<img src="images/aws/s3.png" width="75"/> **S3** – Scalable object storage. Use for files, backups, static websites, and data lakes.
+<img src="images/aws/s3.jpg" width="75"/> **S3** – Scalable object storage. Use for files, backups, static websites, and data lakes.
 
 <img src="images/aws/efs.png" width="75"/> **EFS** – Network-attached storage you can mount to multiple EC2s.
 
