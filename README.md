@@ -11,6 +11,8 @@ Hi! I'm Sami Hamdalla, a computer science student at the University of Houston. 
 
 - [DevOps](docs/devops/devops.md)
 
+- [Web Dev](docs/webdev/webdev.md)
+
 - [Object-Oriented Programming](docs/oop/oop.md)
 
 - [Data Structures & Algorithms](docs/dsa/dsa.md)
