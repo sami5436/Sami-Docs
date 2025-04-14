@@ -63,9 +63,9 @@ Diving into it, I was confused on how to even begin. I decided to search up the 
 
 <img src="images/aws/s3.svg" width="75"/> **S3** – Scalable object storage. Use for files, backups, static websites, and data lakes.
 
-<img src="images/aws/efs.png" width="75"/> **EFS** – Network-attached storage you can mount to multiple EC2s.
+<img src="images/aws/efs.svg" width="75"/> **EFS** – Network-attached storage you can mount to multiple EC2s.
 
-<img src="images/aws/ebs.png" width="75"/> **EBS** – Block-level storage for EC2. Like a hard drive attached to your instance.
+<img src="images/aws/ebs.svg" width="75"/> **EBS** – Block-level storage for EC2. Like a hard drive attached to your instance.
 
 **Networking & Content Delivery**:
 
@@ -90,16 +90,14 @@ Diving into it, I was confused on how to even begin. I decided to search up the 
 **Monitoring & Logging**:
 <img src="images/aws/cloudwatch.png" width="75"/> **CloudWatch** – Monitor logs, metrics, and set alarms for all your AWS resources.
 
-<img src="images/aws/cloudtrail.png" width="75"/> **CloudTrail** – Logs all actions made through the AWS console or CLI. Great for auditing.
-
-<img src="images/aws/cloudalert.png" width="75"/> **CloudWatch Alarms** – Set alerts when metrics (like CPU or errors) pass a threshold.
+<img src="images/aws/cloudtrail.png" width="75"/> **CloudTrail** – Logs all actions made through the AWS console or CLI. Great for auditing. **CloudWatch Alarms** – Set alerts when metrics (like CPU or errors) pass a threshold.
 
 **API & Integration**:
-<img src="images/aws/apigateway.png" width="75"/> **API Gateway** – Creates REST or WebSocket APIs that connect frontend apps to Lambda or other services.
+<img src="images/aws/apigateway.jpg" width="75"/> **API Gateway** – Creates REST or WebSocket APIs that connect frontend apps to Lambda or other services.
 
-<img src="images/aws/sqs.png" width="75"/> **SQS** – Message queueing for decoupling components in distributed systems.
+<img src="images/aws/sqs.webp" width="75"/> **SQS** – Message queueing for decoupling components in distributed systems.
 
-<img src="images/aws/sns.png" width="75"/> **SNS** – Sends notifications via email, SMS, or HTTP endpoints (pub/sub model).
+<img src="images/aws/sns.webp" width="75"/> **SNS** – Sends notifications via email, SMS, or HTTP endpoints (pub/sub model).
 
 
 ### Azure
