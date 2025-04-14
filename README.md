@@ -31,8 +31,75 @@ We were given a problem statement that involved a company valued at over $10 mil
 
 Diving into it, I was confused on how to even begin. I decided to search up the most frequently used AWS services and begin from there. Here it is what I learned:
 
-- ![EC2 Example](images/aws/ec2.png) - 
+**Networking & Security**:
 
+<img src="images/aws/vpc.png" width="75"/> **VPC (Virtual Private Cloud)** – Your own isolated section of the AWS cloud where you can launch resources in a logically separated network.
+
+<img src="images/aws/subnet.png" width="75"/> **Subnets** – Divide your VPC into smaller networks. Use **public subnets** for internet-facing resources and **private subnets** for backend services.
+
+<img src="images/aws/multiaz.png" width="75"/> **Multi-AZ** – Deploy resources across multiple availability zones (data centers) for high availability and fault tolerance.
+
+<img src="images/aws/igw.png" width="75"/> **Internet Gateway (IGW)** – A gateway that allows communication between instances in your VPC and the internet (used by public subnets).
+
+<img src="images/aws/natgateway.png" width="75"/> **NAT Gateway** – Lets instances in a private subnet access the internet (for updates, API calls), without being exposed publicly.
+
+<img src="images/aws/securitygroup.png" width="75"/> **Security Groups** – Virtual firewalls that control inbound and outbound traffic for your EC2 instances.
+
+<img src="images/aws/nacl.png" width="75"/> **Network ACLs (NACLs)** – Stateless firewalls for subnets. Provide an extra layer of control over traffic in and out of a subnet.
+
+<img src="images/aws/route-table.png" width="75"/> **Route Tables** – Define how traffic is directed within your VPC (e.g., send internet traffic through the IGW, private traffic to local subnets).
+
+**Compute**:
+
+<img src="images/aws/ec2.png" width="75"/> **EC2** – CPU, memory, storage, and networking capacity. A customizable virtual machine for running applications.
+
+<img src="images/aws/lambda.png" width="75"/> **Lambda** – Run backend code without managing servers. Great for automation and microservices.
+
+<img src="images/aws/fargate.png" width="75"/> **Fargate** – Run containers serverlessly without provisioning EC2. Works with ECS and EKS.
+
+<img src="images/aws/autoscaling.png" width="75"/> **Auto Scaling** – Automatically adds or removes EC2s to match user demand.
+
+**Storage**:
+
+<img src="images/aws/s3.png" width="75"/> **S3** – Scalable object storage. Use for files, backups, static websites, and data lakes.
+
+<img src="images/aws/efs.png" width="75"/> **EFS** – Network-attached storage you can mount to multiple EC2s.
+
+<img src="images/aws/ebs.png" width="75"/> **EBS** – Block-level storage for EC2. Like a hard drive attached to your instance.
+
+**Networking & Content Delivery**:
+
+<img src="images/aws/alb.png" width="75"/> **ALB (Application Load Balancer)** – Distributes incoming traffic across multiple targets (like EC2s).
+
+<img src="images/aws/cloudfront.png" width="75"/> **CloudFront (CDN)** – Delivers content faster to users worldwide using edge locations.
+
+<img src="images/aws/route53.png" width="75"/> **Route 53** – AWS DNS service for routing users to your applications with high availability.
+
+**Identity & Access**:
+
+<img src="images/aws/cognito.png" width="75"/> **Cognito** – Adds user signup, sign-in, and access control to your apps.
+
+<img src="images/aws/iam.png" width="75"/> **IAM** – Manage who can access what in AWS (users, roles, policies).
+
+**Databases**:
+
+<img src="images/aws/rds.png" width="75"/> **RDS** – Managed SQL databases (MySQL, PostgreSQL, etc.) without handling backups or patching.
+
+<img src="images/aws/redshift.png" width="75"/> **Redshift** – Fast, petabyte-scale data warehouse for analytics.
+
+**Monitoring & Logging**:
+<img src="images/aws/cloudwatch.png" width="75"/> **CloudWatch** – Monitor logs, metrics, and set alarms for all your AWS resources.
+
+<img src="images/aws/cloudtrail.png" width="75"/> **CloudTrail** – Logs all actions made through the AWS console or CLI. Great for auditing.
+
+<img src="images/aws/cloudalert.png" width="75"/> **CloudWatch Alarms** – Set alerts when metrics (like CPU or errors) pass a threshold.
+
+**API & Integration**:
+<img src="images/aws/apigateway.png" width="75"/> **API Gateway** – Creates REST or WebSocket APIs that connect frontend apps to Lambda or other services.
+
+<img src="images/aws/sqs.png" width="75"/> **SQS** – Message queueing for decoupling components in distributed systems.
+
+<img src="images/aws/sns.png" width="75"/> **SNS** – Sends notifications via email, SMS, or HTTP endpoints (pub/sub model).
 
 
 ### Azure
