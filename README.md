@@ -79,7 +79,7 @@ Diving into it, I was confused on how to even begin. I decided to search up the 
 
 <img src="images/aws/cognito.png" width="75"/> **Cognito** – Adds user signup, sign-in, and access control to your apps.
 
-<img src="images/aws/iam.png" width="75"/> **IAM** – Manage who can access what in AWS (users, roles, policies).
+<img src="images/aws/iam.webp" width="75"/> **IAM** – Manage who can access what in AWS (users, roles, policies).
 
 **Databases**:
 
@@ -93,6 +93,7 @@ Diving into it, I was confused on how to even begin. I decided to search up the 
 <img src="images/aws/cloudtrail.png" width="75"/> **CloudTrail** – Logs all actions made through the AWS console or CLI. Great for auditing. **CloudWatch Alarms** – Set alerts when metrics (like CPU or errors) pass a threshold.
 
 **API & Integration**:
+
 <img src="images/aws/apigateway.jpg" width="75"/> **API Gateway** – Creates REST or WebSocket APIs that connect frontend apps to Lambda or other services.
 
 <img src="images/aws/sqs.webp" width="75"/> **SQS** – Message queueing for decoupling components in distributed systems.
