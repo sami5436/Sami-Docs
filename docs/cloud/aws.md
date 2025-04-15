@@ -569,5 +569,40 @@ https://docs.aws.amazon.com/
 https://www.youtube.com/watch?v=9JTzOOlkepY&t=3008s
 - great breakdown of  Auto Scaling and Load Balancing
 
+https://docs.aws.amazon.com/vpc/latest/userguide/working-with-igw.html
+- internet gateway
 
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html
+-nat gateway. what if we need to update our private subnet servers
+  
+https://docs.aws.amazon.com/vpc/latest/userguide/creating-security-groups.html
+- security group. Need one per tier. 
+
+https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-console.html
+- iam
+
+
+https://youtu.be/j3nLY05Ydqg?t=465
+- ECS w/ EC2 instance and autoscaling enabled.
+
+
+https://www.youtube.com/watch?v=0mwgbiJae5Q
+- love this video. Shows everything minus the ECS but I dont think it’s hard to implement! he uses a template to launch each new instance of an ec2, but for us we would use an ecs that would wait until autoscaling creates new ec2 and then put the docker image onto it. ALB (public) -> Web Tier (private) -> App Tier (private). Still kinda need to figure out the availability zones, but it seems pretty straight forward 
+
+- cloud front - caches site closer to users on global edge locations. Need to create ALB first before this and then also after this we can create teh WAF too (need to find a video to go over firewall)
+
+https://www.youtube.com/watch?v=vwYy8GUV8Zw
+- SNS: When a system event like ecs failing or soemthing, notify admin via email or trigger a Lambda function (didnt rly watch this tbh yet) 
+
+https://www.youtube.com/watch?v=xyHLX1dUwuA
+- SQS: Web tier sends orders to SQS - > App tier picks them up at its own pace (queuing) (didnt watch yet)
+
+https://www.youtube.com/watch?v=bLu1dblVdOQ
+- RDS/S3 data to REDshift - DATA WAREHOUSE. Big queries big. 
+
+https://www.youtube.com/watch?v=VE4yCo2anFs
+- not watched yet, but redshift data querying to qquick sight
+
+https://youtu.be/ywfUpj0NM1U
+- read replicas for RDS.
 
