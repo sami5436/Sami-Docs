@@ -43,3 +43,26 @@
         
   ```
   **Thought Process**: have 2 vars to store the indices of the left and the right. add the left words current index to result, then right words current index to result. as soon as youre done iterating thru either left or right word, end while loop. this indicates that there may be more characters in one of the words, append the rest of the word to it.
+
+3 -  Roman to Integer
+Input: s = "MCMXCIV"
+Output: 1994
+Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
+
+- Roman to integer. 
+  ```
+  class Solution:
+      def romanToInt(self, s: str) -> int:
+          d = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+          res = 0
+  
+          for a, b in zip(s, s[1: ]):
+              if d[a] < d[b]:
+                  res -= d[a]
+              else:
+                  res += d[a]
+  
+          return res + d[s[-1]]
+        
+  ```
+  **Thought Process**: created a dictionary and store all roman to integer vals. a iterating thru s while b is iterating thru s[1:] at the same with the zip function. at every iteratation a is compared to b, and if a is less than b subtract, else add.
