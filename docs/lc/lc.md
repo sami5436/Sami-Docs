@@ -19,4 +19,27 @@
   **Thought Process**: basically, iterate thru the array and find the closest number. if the positive version of the closest number exists within the array, return that instead of the closest number.
 
   
+2 - Merge Strings Alternately
 
+- You are given 2 strings. Add letter by letter to result starting on the left word and alternating to the right. If you fully iterate a string and still have some characters left in the other string, add it to the end of result. 
+  - Input: word1 = "abc", word2 = "pqr"
+  - Output: "apbqcr"
+  ```
+  class Solution:
+      def mergeAlternately(self, word1: str, word2: str) -> str:
+          left, right = 0, 0
+          res = ""
+          while left < len(word1) and right < len(word2):
+              res += word1[left]
+              res += word2[right]
+              left += 1
+              right += 1
+          
+          if left < len(word1):
+              res += word1[left:]
+          
+          if right < len(word2):
+              res += word2[right:]
+        
+  ```
+  **Thought Process**: have 2 vars to store the indices of the left and the right. add the left words current index to result, then right words current index to result. as soon as youre done iterating thru either left or right word, end while loop. this indicates that there may be more characters in one of the words, append the rest of the word to it.
