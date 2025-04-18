@@ -66,3 +66,24 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
         
   ```
   **Thought Process**: created a dictionary and store all roman to integer vals. a iterating thru s while b is iterating thru s[1:] at the same with the zip function. at every iteratation a is compared to b, and if a is less than b subtract, else add.
+
+4 -  Is Subsequence
+Input: s = "abc", t = "ahbgdc"
+Output: true
+
+- do the characters in s appear in t? do the characters in s appear in t in the original order they appear in s?
+  ```
+  class Solution:
+      def isSubsequence(self, s: str, t: str) -> bool:
+          sI, tI = 0, 0
+          while (sI < len(s) and tI < len(t)):
+              if(s[sI] == t[tI]):
+                  sI += 1
+              tI += 1
+          
+          return sI == len(s)
+          
+  ```
+  **Thought Process**: used 2 pointers to keep track of character s and character t. while the pointers were in bound, i check to see if current characters are equal. if they are, we can move both indicies to next pos. if not, we only move t since we havent found the s index yet. if while loop is exited, we check s index to see if s has been iterated thru entirely.
+  
+
