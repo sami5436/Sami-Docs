@@ -110,5 +110,29 @@ Output: 5
           
   ```
   **Thought Process**: used left and right, right is always ahead of left. we are always going to increment right by one at every iteration, if we hit a place where our right is less then our left value, this is saying hey we found a new low, we need to readjust our left. if not (price at right is greater than price at left, what its supposed to be), then we just do a normal profit calc and we can just make sure to replace the maxP var if it is greater.
+
+6 -  Longest Common Prefix
+
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+
+- prefix 
+  ```
+  class Solution:
+      def longestCommonPrefix(self, strs: List[str]) -> str:
+          if not strs:
+              return ""
+          
+          for i in range(len(strs[0])):
+              char = strs[0][i]
+              for word in strs[1:]:
+                  if i >= len(word) or word[i] != strs[0][i]:
+                      return strs[0][:i]
+          return strs[0]
+          
+  ```
+  **Thought Process**: right so the longest possible prefix is the first string completely so we iterate thru the entire word char by char and use that to compare char by char to the other words chars at that specific index. we are not rlly adding chars to any variable, we are just straight up moving on with the first word's index if we keep hitting matches. if at the current word we are comparing has lesser length than the index var, we just return wherever the slice of whereever we stopped or if the current value of the word we are checking compared to first word's char at that specific index, we also return the slice of where ever we stopped
+  
+  
   
 
