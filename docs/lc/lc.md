@@ -85,5 +85,30 @@ Output: true
           
   ```
   **Thought Process**: used 2 pointers to keep track of character s and character t. while the pointers were in bound, i check to see if current characters are equal. if they are, we can move both indicies to next pos. if not, we only move t since we havent found the s index yet. if while loop is exited, we check s index to see if s has been iterated thru entirely.
+
+  
+5 -  Best Time to Buy and Sell Stock
+
+Input: prices = [7,1,5,3,6,4]
+Output: 5
+
+- what is the profit (left index being the min and and right index being the max after the min occurrence) 
+  ```
+  class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        l, r, maxP = 0, 1, 0
+
+        while(r < len(prices)):
+            if prices[r] > prices[l]:
+                profit = prices[r] - prices[l]
+                maxP = max(maxP, profit)
+            else:
+                l = r
+            r += 1
+        
+        return maxP
+          
+  ```
+  **Thought Process**: used left and right, right is always ahead of left. we are always going to increment right by one at every iteration, if we hit a place where our right is less then our left value, this is saying hey we found a new low, we need to readjust our left. if not (price at right is greater than price at left, what its supposed to be), then we just do a normal profit calc and we can just make sure to replace the maxP var if it is greater.
   
 
